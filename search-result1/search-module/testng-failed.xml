@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [search-module]" parallel="tests">
+  <test thread-count="5" name="search-module-qa(failed)" parallel="tests">
+    <parameter name="keyword" value="qa"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="search"/>
+          <include name="setupParameters"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search-module-qa(failed) -->
+  <test thread-count="5" name="search-module-microsoft(failed)" parallel="tests">
+    <parameter name="keyword" value="microsoft"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="search"/>
+          <include name="setupParameters"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search-module-microsoft(failed) -->
+  <test thread-count="5" name="search-module-java(failed)" parallel="tests">
+    <parameter name="keyword" value="java"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="search"/>
+          <include name="setupParameters"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- search-module-java(failed) -->
+</suite> <!-- Failed suite [search-module] -->
